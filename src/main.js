@@ -33,7 +33,7 @@ function switchTheme(){
     themeButton.setAttribute('data', `./icons/${curTheme}.svg`);
     const expiry = new Date();
     expiry.setTime(2147483647000);
-    document.cookie = `theme=${curTheme}; expires=${expiry.toUTCString()}; domain=.coldy.ml; path=/; SameSite=Strict`;
+    document.cookie = `theme=${curTheme}; expires=${expiry.toUTCString()}; path=/; SameSite=Strict`;
 }
 function href(name) {
     return location.href = name;
